@@ -1,0 +1,10 @@
+services:
+  s1db:
+    image: postgres:latest
+    container_name: 68-s1-database
+    ports:
+      - "55433:5432"
+    environment:
+      POSTGRES_USER: "worrachat"
+      POSTGRES_DB: "worrachat"
+      POSTGRES_PASSWORD: "0973485488"

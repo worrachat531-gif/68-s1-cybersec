@@ -11,6 +11,9 @@ cp env.simple .env
 ```
 
 ## Running a Service
+## Database
+docker compose -f db.yaml up #monotoring
+docker compose -f db.yaml up -d #background daemon
 ```sh
 docker compose -f db.yaml up #monitoring
 docker compose -f db.yaml up -d #background

@@ -16,8 +16,14 @@ cp env.simple .env
 docker compose -f db.yaml up #monotoring
 docker compose -f db.yaml up -d #background daemon
 ```
-
+## Postgres admin
 ```sh
-docker compose -f db.yaml up #monitoring
-docker compose -f db.yaml up -d #background
+docker compose -f admin.yaml up #monotoring
+docker compose -f admin.yaml up -d #background daemon
+```
+
+## Strapi Application
+```sh
+docker compose -f app.yaml up #monotoring
+docker compose -f app.yaml up -d #background daemon
 ```
